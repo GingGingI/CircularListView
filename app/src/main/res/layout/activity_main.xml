@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/remove_item"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="item --"/>
+
+		<Button
+			android:id="@+id/add_item"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="item ++"/>
+
+		<Button
+			android:id="@+id/enlarge_radius"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="radius ++"/>
+
+		<Button
+			android:id="@+id/reduce_radius"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="radius --"/>
+	</LinearLayout>
+
+	<c.gingdev.circularlistview.CircularListView.CircularListView
+		android:id="@+id/circularList"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="-275dp"
+		android:layout_width="550dp"
+		android:layout_height="550dp"
+		android:background="#000"
+		android:layout_centerInParent="true"/>
+
+</RelativeLayout>
